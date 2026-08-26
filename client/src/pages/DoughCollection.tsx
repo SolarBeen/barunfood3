@@ -5,10 +5,10 @@ import { SectionEyebrow } from "@/components/SectionEyebrow";
 import { SubPageLayout } from "@/components/SubPageLayout";
 
 const doughViews = [
-  ["STORAGE", "보관 조건", "제품의 보관·해동 조건은 실제 라벨과 최신 규격서를 기준으로 확인합니다.", "/manus-storage/dough-type-frozen_d91fca8d.webp", PackageCheck],
-  ["FORM", "기본 형태", "메뉴와 조리 방식에 맞춰 필요한 도우의 형태와 사용 조건을 검토합니다.", "/manus-storage/dough-type-regular_4e2133dd.webp", Wheat],
-  ["THICKNESS", "얇은 타입", "얇은 도우의 조리 결과는 설비·온도·시간에 따라 달라질 수 있어 현장 조건을 함께 봅니다.", "/manus-storage/dough-type-thin_a61a8d20.webp", Ruler],
-  ["VOLUME", "볼륨 지향", "식감과 볼륨을 원하는 메뉴에는 반죽의 상태와 조리 환경을 함께 검토합니다.", "/manus-storage/dough-type-volume_161a77d2.webp", CircleGauge],
+  ["STORAGE", "보관 조건", "제품의 보관·해동 조건은 실제 라벨과 최신 규격서를 기준으로 확인합니다.", "/assets/dough-type-frozen.webp", PackageCheck],
+  ["FORM", "기본 형태", "메뉴와 조리 방식에 맞춰 필요한 도우의 형태와 사용 조건을 검토합니다.", "/assets/dough-type-standard.webp", Wheat],
+  ["THICKNESS", "얇은 타입", "얇은 도우의 조리 결과는 설비·온도·시간에 따라 달라질 수 있어 현장 조건을 함께 봅니다.", "/assets/dough-type-thin.webp", Ruler],
+  ["VOLUME", "볼륨 지향", "식감과 볼륨을 원하는 메뉴에는 반죽의 상태와 조리 환경을 함께 검토합니다.", "/assets/dough-type-volume.webp", CircleGauge],
 ] as const;
 
 export default function DoughCollection() {
