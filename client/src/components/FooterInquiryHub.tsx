@@ -23,9 +23,9 @@ const inquiryRoutes: Array<{
 export function FooterInquiryHub({ onInquiry }: FooterInquiryHubProps) {
   return (
     <section aria-labelledby="footer-inquiry-heading" className="relative isolate overflow-hidden bg-[#211a16] text-white">
-      <img src="/manus-storage/barunfood-partnership-table_1f4b1b0d.jpg" alt="식품 제조 파트너십을 검토하는 바른푸드의 작업 테이블" className="absolute inset-0 -z-30 h-full w-full object-cover object-center" />
-      <div className="absolute inset-0 -z-20 bg-[#1b1410]/72" />
-      <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(128,39,28,0.72)_0%,rgba(67,30,23,0.57)_38%,rgba(25,20,16,0.82)_100%)]" />
+      <img src="/assets/barun-hand-dough-support.webp" alt="도우 상태를 손으로 확인하는 바른푸드 작업 장면" className="absolute inset-0 -z-30 h-full w-full object-cover object-[58%_50%]" />
+      <div className="absolute inset-0 -z-20 bg-[#1b1410]/54" />
+      <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(96,28,21,0.82)_0%,rgba(61,28,22,0.58)_42%,rgba(25,20,16,0.74)_100%)]" />
       <div className="mx-auto grid max-w-[1440px] gap-10 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-[0.93fr_1.07fr] lg:gap-20 lg:px-12 lg:py-24">
         <div className="flex flex-col justify-center lg:pl-[8.5%]">
           <p className="text-[10px] font-bold tracking-[0.21em] text-[#f4bd75]">CUSTOMER SUPPORT</p>
