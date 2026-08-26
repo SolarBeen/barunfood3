@@ -90,11 +90,11 @@ export default function Home() {
   return (
     <div className="min-h-screen overflow-x-hidden bg-[#f7f3eb] text-[#242321]">
       <PageMeta
-        title="바른푸드 | 맛의 기준을, 생산의 기준으로"
+        title="바른푸드 | 정직한 재료, 완벽한 도우"
         description="도우부터 피자까지. 메뉴의 의도와 사용 환경을 읽고, 반복 가능한 제조 기준으로 완성하는 바른푸드입니다."
         path="/"
         image={heroMedia.poster}
-        imageAlt="바른푸드 생산 현장 — 맛의 기준을, 생산의 기준으로"
+        imageAlt="바른푸드 생산 현장 — 정직한 재료, 완벽한 도우"
       />
       <SiteHeader darkOnTop onInquiry={() => openInquiry()} />
       <main id="top">
@@ -106,7 +106,7 @@ export default function Home() {
           <div className="mx-auto flex min-h-[684px] max-w-[1440px] flex-col justify-between px-5 pb-7 pt-24 sm:px-8 lg:min-h-[734px] lg:px-12 lg:pb-10 lg:pt-32">
             <div className="hero-intro max-w-3xl lg:pl-[8.5%]">
               <SectionEyebrow number="01" light>THE STANDARD OF DOUGH</SectionEyebrow>
-              <h1 className="mt-8 font-serif text-[clamp(3.2rem,6.2vw,6.5rem)] font-semibold leading-[0.94] tracking-[-0.085em] text-white">맛의 기준을,<span className="mt-3 block text-[#c95043]">생산의 기준으로.</span></h1>
+              <h1 className="mt-8 font-serif text-[clamp(3.2rem,6.2vw,6.5rem)] font-semibold leading-[0.94] tracking-[-0.085em] text-white">정직한 재료,<span className="mt-3 block text-[#c95043]">완벽한 도우</span></h1>
               <p className="mt-8 max-w-xl text-[15px] leading-7 text-white/75 sm:text-[17px]">도우부터 피자까지. 바른푸드는 메뉴의 의도와 사용 환경을 함께 읽고, 반복 가능한 제조 기준으로 완성합니다.</p>
               <div className="mt-9 flex flex-wrap gap-3">
                 <a href="/products" className="inline-flex items-center gap-3 bg-[#9e3328] px-5 py-3.5 text-sm font-bold text-white transition hover:bg-[#bd4a3e] active:scale-[0.98]">제품 파일 찾기 <ArrowDownRight className="h-4 w-4" /></a>
