@@ -51,16 +51,6 @@ const navGroups = [
       ["B2B 상담", "/partnership#inquiry"],
     ],
   },
-  {
-    label: "뉴스룸",
-    href: "/newsroom",
-    description: "바른푸드의 기록과 소식",
-    items: [
-      ["뉴스룸", "/newsroom"],
-      ["공지사항", "/newsroom#notice"],
-      ["자료 요청", "/partnership#inquiry"],
-    ],
-  },
 ];
 
 export function SiteHeader({ onInquiry, darkOnTop = false }: SiteHeaderProps) {

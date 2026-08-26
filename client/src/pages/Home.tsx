@@ -151,10 +151,6 @@ export default function Home() {
           </div>
         </FadeInSection>
 
-        <FadeInSection className="bg-[#ece5d9] py-20 sm:py-28 lg:py-32">
-          <div className="mx-auto grid max-w-[1440px] gap-12 px-5 sm:px-8 lg:grid-cols-[0.76fr_1.24fr] lg:px-12"><div><SectionEyebrow number="04">LATEST RECORD</SectionEyebrow><p className="mt-8 max-w-sm text-[15px] leading-7 text-[#70685d]">제품, 제조, 파트너십의 변화를 확인한 뒤 순서대로 공개합니다.</p></div><div className="border-t border-[#cfc5b5]"><a href="/newsroom/site-record-2026" className="group grid gap-4 border-b border-[#cfc5b5] py-8 transition hover:bg-[#e3dacb] sm:grid-cols-[130px_1fr_auto] sm:items-center sm:px-4"><span className="text-[10px] font-bold tracking-[0.16em] text-[#9e3328]">2026.08.26</span><div><p className="text-[10px] font-bold tracking-[0.16em] text-[#9e3328]">SITE UPDATE / VERIFIED</p><h2 className="mt-3 text-xl font-bold tracking-[-0.05em]">바른푸드 웹사이트의 정보 구조를 정비했습니다.</h2><p className="mt-2 text-sm leading-6 text-[#70685d]">제품·제조·협업 정보를 필요한 질문에 맞춰 다시 구성하고, 확인 가능한 기록 중심으로 읽기 흐름을 개선했습니다.</p></div><span className="inline-flex items-center gap-2 self-start text-sm font-bold text-[#242321] transition group-hover:text-[#9e3328] sm:self-auto">기록 읽기 <ArrowUpRight className="h-4 w-4" /></span></a></div></div>
-        </FadeInSection>
-
         <FadeInSection><FooterInquiryHub onInquiry={openInquiry} /></FadeInSection>
       </main>
       <SiteFooter />
