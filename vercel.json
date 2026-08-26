@@ -1,0 +1,19 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "pnpm run build",
+  "outputDirectory": "dist/public",
+  "rewrites": [
+    { "source": "/company", "destination": "/index.html" },
+    { "source": "/location", "destination": "/index.html" },
+    { "source": "/manufacturing", "destination": "/index.html" },
+    { "source": "/manufacturing/quality", "destination": "/index.html" },
+    { "source": "/manufacturing/research", "destination": "/index.html" },
+    { "source": "/products", "destination": "/index.html" },
+    { "source": "/products/pizza", "destination": "/index.html" },
+    { "source": "/products/dough", "destination": "/index.html" },
+    { "source": "/partnership", "destination": "/index.html" },
+    { "source": "/newsroom", "destination": "/index.html" },
+    { "source": "/newsroom/site-record-2026", "destination": "/index.html" },
+    { "source": "/404", "destination": "/index.html" }
+  ]
+}
