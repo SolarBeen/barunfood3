@@ -24,5 +24,5 @@ export function InitialBrandLoader() {
   }, []);
 
   if (!visible) return null;
-  return <div className={`brand-loader ${leaving ? "brand-loader--leaving" : ""}`} role="status" aria-live="polite" aria-label="바른푸드 브랜드 화면을 준비하고 있습니다"><div className="brand-loader__rail" /><div className="brand-loader__content"><div className="brand-loader__mark">01</div><p className="brand-loader__eyebrow">BATCH / BARUN FOOD</p><img src="/manus-storage/barunfood-logo_71e8221e.png" alt="" className="brand-loader__logo" /><div className="brand-loader__rule"><span /></div><p className="brand-loader__note">DOUGH · STANDARD · PARTNERSHIP</p></div></div>;
+  return <div className={`brand-loader ${leaving ? "brand-loader--leaving" : ""}`} role="status" aria-live="polite" aria-label="바른푸드 브랜드 화면을 준비하고 있습니다"><div className="brand-loader__rail" /><div className="brand-loader__content"><div className="brand-loader__mark">01</div><p className="brand-loader__eyebrow">BATCH / BARUN FOOD</p><img src="/assets/barunfood-logo-full.png" alt="" className="brand-loader__logo" /><div className="brand-loader__rule"><span /></div><p className="brand-loader__note">DOUGH · STANDARD · PARTNERSHIP</p></div></div>;
 }

@@ -12,8 +12,8 @@ export function BarunLogo({ light = false, compact = false }: BarunLogoProps) {
   return (
     <div className={`flex items-center transition-all duration-300 motion-reduce:transition-none ${compact ? "gap-1.5" : "gap-2.5"}`} aria-label="바른푸드 공식 브랜드 로고">
       <img
-        src="/manus-storage/barunfood-logo_71e8221e.png"
-        alt="바른푸드 공식 캐릭터 로고"
+        src="/assets/barunfood-logo-mark.png"
+        alt="바른푸드 캐릭터 마크"
         className={`object-contain transition-all duration-300 motion-reduce:transition-none ${compact ? "h-8 w-8 sm:h-9 sm:w-9" : "h-11 w-11 sm:h-12 sm:w-12"}`}
       />
       {!compact && (
