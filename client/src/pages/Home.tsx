@@ -63,6 +63,11 @@ const proofRecords = [
   { number: "05", label: "PRODUCT FILES", text: "현재 공개 제품 파일", href: "/products" },
 ];
 
+const heroMedia = {
+  poster: "/assets/barun-hero-production-poster.jpg",
+  video: "/assets/barun-hero-production-loop.mp4",
+};
+
 export default function Home() {
   const [inquiryOpen, setInquiryOpen] = useState(false);
   const [inquiryType, setInquiryType] = useState<InquiryType>("제품 납품");
@@ -88,14 +93,14 @@ export default function Home() {
         title="바른푸드 | 맛의 기준을, 생산의 기준으로"
         description="도우부터 피자까지. 메뉴의 의도와 사용 환경을 읽고, 반복 가능한 제조 기준으로 완성하는 바른푸드입니다."
         path="/"
-        image="/manus-storage/barunfood-og-image_3b8ec2a6.jpg"
-        imageAlt="바른푸드 — 맛의 기준을, 생산의 기준으로"
+        image={heroMedia.poster}
+        imageAlt="바른푸드 생산 현장 — 맛의 기준을, 생산의 기준으로"
       />
       <SiteHeader darkOnTop onInquiry={() => openInquiry()} />
       <main id="top">
         <section className="relative isolate min-h-[760px] overflow-hidden bg-[#252522] pt-[76px] text-white lg:min-h-[820px] lg:pt-[86px]">
-          <img src="/manus-storage/barunfood-hero-oven_56fe5a36.jpg" alt="도우 생산 라인과 오븐의 따뜻한 빛" className="absolute inset-0 -z-30 h-full w-full object-cover object-[60%_center]" />
-          {showHeroVideo && <video autoPlay muted loop playsInline preload="metadata" poster="/manus-storage/barunfood-hero-oven_56fe5a36.jpg" aria-hidden="true" className="absolute inset-0 -z-20 h-full w-full object-cover object-[60%_center]"><source src="/manus-storage/barun-hero-production-loop_d778530a.mp4" type="video/mp4" /></video>}
+          <img src={heroMedia.poster} alt="바른푸드 생산 현장의 영상 대체 이미지" className="absolute inset-0 -z-30 h-full w-full object-cover object-[60%_center]" />
+          {showHeroVideo && <video autoPlay muted loop playsInline preload="metadata" poster={heroMedia.poster} aria-hidden="true" className="absolute inset-0 -z-20 h-full w-full object-cover object-[60%_center]"><source src={heroMedia.video} type="video/mp4" /></video>}
           <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(20,19,17,0.9)_0%,rgba(20,19,17,0.72)_44%,rgba(20,19,17,0.18)_76%,rgba(20,19,17,0.3)_100%)]" />
           <div className="absolute bottom-0 left-[6%] top-[18%] hidden w-px bg-white/20 lg:block" />
           <div className="mx-auto flex min-h-[684px] max-w-[1440px] flex-col justify-between px-5 pb-7 pt-24 sm:px-8 lg:min-h-[734px] lg:px-12 lg:pb-10 lg:pt-32">
