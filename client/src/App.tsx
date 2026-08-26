@@ -19,6 +19,8 @@ const Products = lazy(() => import("./pages/Products"));
 const PizzaCollection = lazy(() => import("./pages/PizzaCollection"));
 const DoughCollection = lazy(() => import("./pages/DoughCollection"));
 const Partnership = lazy(() => import("./pages/Partnership"));
+const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
+const TermsOfUse = lazy(() => import("./pages/TermsOfUse"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 function RouteLoadingFallback() {
@@ -51,6 +53,10 @@ function Router() {
     <Route path="/dough.html" component={DoughCollection} />
     <Route path="/partnership" component={Partnership} />
     <Route path="/partnership.html" component={Partnership} />
+    <Route path="/privacy" component={PrivacyPolicy} />
+    <Route path="/privacy.html" component={PrivacyPolicy} />
+    <Route path="/terms" component={TermsOfUse} />
+    <Route path="/terms.html" component={TermsOfUse} />
     <Route path="/404" component={NotFound} />
     <Route component={NotFound} />
   </Switch></Suspense>;

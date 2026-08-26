@@ -14,6 +14,7 @@ function getLoaderMarker(pathname: string) {
   if (matchesRoute(normalizedPath, "/manufacturing") || normalizedPath === "/quality.html" || normalizedPath === "/research.html") return "02";
   if (matchesRoute(normalizedPath, "/products") || normalizedPath === "/pizza.html" || normalizedPath === "/dough.html") return "03";
   if (matchesRoute(normalizedPath, "/partnership")) return "04";
+  if (matchesRoute(normalizedPath, "/privacy") || matchesRoute(normalizedPath, "/terms")) return "05";
 
   return "00";
 }

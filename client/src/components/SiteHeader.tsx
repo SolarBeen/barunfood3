@@ -48,7 +48,6 @@ const navGroups = [
     items: [
       ["파트너십 소개", "/partnership"],
       ["상담 절차", "/partnership#process"],
-      ["B2B 상담", "/partnership"],
     ],
   },
 ];

@@ -25,7 +25,7 @@ export function SiteFooter() {
         </div>
         <div className="mt-14 flex flex-col justify-between gap-4 border-t border-white/15 pt-6 text-[11px] text-white/45 sm:flex-row">
           <p>© BARUN FOOD CO., LTD. ALL RIGHTS RESERVED.</p>
-          <div className="flex gap-4"><a href="/" className="hover:text-white">개인정보처리방침</a><a href="/" className="hover:text-white">이용약관</a></div>
+          <div className="flex gap-4"><a href="/privacy" className="hover:text-white">개인정보처리방침</a><a href="/terms" className="hover:text-white">이용약관</a></div>
         </div>
       </div>
     </footer>
