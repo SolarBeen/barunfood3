@@ -179,7 +179,6 @@ export default defineConfig({
         pizza: path.resolve(import.meta.dirname, "client/pizza.html"),
         dough: path.resolve(import.meta.dirname, "client/dough.html"),
         partnership: path.resolve(import.meta.dirname, "client/partnership.html"),
-        newsroom: path.resolve(import.meta.dirname, "client/newsroom.html"),
       },
       output: {
         manualChunks(id) {

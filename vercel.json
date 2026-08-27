@@ -12,8 +12,6 @@
     { "source": "/products/pizza", "destination": "/index.html" },
     { "source": "/products/dough", "destination": "/index.html" },
     { "source": "/partnership", "destination": "/index.html" },
-    { "source": "/newsroom", "destination": "/index.html" },
-    { "source": "/newsroom/site-record-2026", "destination": "/index.html" },
     { "source": "/404", "destination": "/index.html" }
   ]
 }

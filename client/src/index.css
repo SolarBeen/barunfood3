@@ -62,9 +62,37 @@ html { scroll-behavior: smooth; }
 body {
   @apply bg-background font-sans text-foreground antialiased;
   font-feature-settings: "ss01" 1, "cv11" 1;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 ::selection { background: #9e3328; color: #fff; }
+
+/* Korean display type needs more breathing room than the previous tight editorial settings. */
+:where(h1, h2, h3) {
+  text-wrap: balance;
+}
+
+:where(.font-serif) {
+  line-height: 1.16 !important;
+  letter-spacing: 0 !important;
+}
+
+:where(h1.font-serif) {
+  line-height: 1.12 !important;
+}
+
+:where(h2.font-serif) {
+  line-height: 1.14 !important;
+}
+
+:where(h3.font-serif) {
+  line-height: 1.2 !important;
+}
+
+[class*="tracking-[-"] {
+  letter-spacing: 0 !important;
+}
 
 .inquiry-input {
   display: block;

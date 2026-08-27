@@ -16,7 +16,7 @@ type SubPageLayoutProps = {
   eyebrow: string;
   title: ReactNode;
   description: string;
-  heroVariant?: "company" | "location" | "manufacturing" | "products" | "partnership" | "newsroom";
+  heroVariant?: "company" | "location" | "manufacturing" | "products" | "partnership";
   heroImage?: string;
   heroImageAlt?: string;
   breadcrumbLabel?: string;
@@ -29,7 +29,6 @@ const heroBackgrounds = {
   manufacturing: "bg-[#f7f3eb]",
   products: "bg-[#e7decf]",
   partnership: "bg-[#e6dac5]",
-  newsroom: "bg-[#efebe3]",
 };
 
 const breadcrumbPages = {
@@ -38,7 +37,6 @@ const breadcrumbPages = {
   manufacturing: { marker: "02", label: "제조·R&D", href: "/manufacturing" },
   products: { marker: "03", label: "제품·브랜드", href: "/products" },
   partnership: { marker: "04", label: "파트너십", href: "/partnership" },
-  newsroom: { marker: "05", label: "뉴스룸", href: "/newsroom" },
 };
 
 export function SubPageLayout({ marker, eyebrow, title, description, heroVariant = "company", heroImage, heroImageAlt, breadcrumbLabel, children }: SubPageLayoutProps) {
