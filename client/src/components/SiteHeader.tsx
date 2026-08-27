@@ -14,7 +14,7 @@ const navGroups = [
   {
     label: "회사소개",
     href: "/company",
-    description: "바른푸드가 지키는 기준",
+    description: "피자 도우 제조기업의 기록",
     items: [
       ["브랜드 스토리", "/company"],
       ["우리가 일하는 방식", "/company#approach"],
@@ -24,7 +24,7 @@ const navGroups = [
   {
     label: "제조·R&D",
     href: "/manufacturing",
-    description: "맛을 생산으로 완성하는 과정",
+    description: "도우 품질을 안정화하는 공정",
     items: [
       ["제조 역량", "/manufacturing"],
       ["품질·안전", "/manufacturing/quality"],
@@ -34,20 +34,20 @@ const navGroups = [
   {
     label: "제품·브랜드",
     href: "/products",
-    description: "메뉴의 시작이 되는 맛",
+    description: "도우와 피자 제품군",
     items: [
-      ["제품 카탈로그", "/products"],
-      ["요리 담은 피자", "/products/pizza"],
+      ["제품 파일", "/products"],
+      ["피자 제품군", "/products/pizza"],
       ["바른 도우", "/products/dough"],
     ],
   },
   {
     label: "파트너십",
     href: "/partnership",
-    description: "필요한 조건부터 함께 검토",
+    description: "납품·개발 상담의 출발점",
     items: [
       ["파트너십 소개", "/partnership"],
-      ["상담 절차", "/partnership#process"],
+      ["상담 진행 방식", "/partnership#process"],
     ],
   },
 ];

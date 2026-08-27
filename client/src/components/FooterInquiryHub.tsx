@@ -14,9 +14,9 @@ const inquiryRoutes: Array<{
   Icon: typeof Box;
   href?: string;
 }> = [
-  { title: "제품·규격 검토", description: "운영 환경과 희망 제품 규격을 알려주세요.", type: "제품 납품", Icon: Box },
-  { title: "맞춤 개발 · OEM/ODM", description: "브랜드별 생산 조건을 함께 검토합니다.", type: "맞춤 제품 개발", Icon: Factory },
-  { title: "납품·공급 조건", description: "수량·일정·납품 지역을 바탕으로 상담합니다.", type: "제품 납품", Icon: Truck },
+  { title: "제품 규격 문의", description: "필요한 도우·피자 규격과 사용 매장을 알려주세요.", type: "제품 납품", Icon: Box },
+  { title: "맞춤 개발 · OEM/ODM", description: "메뉴 콘셉트, 생산 수량, 샘플 테스트 일정을 정리합니다.", type: "맞춤 제품 개발", Icon: Factory },
+  { title: "납품·공급 조건", description: "수량, 납품 지역, 보관 방식에 맞춰 공급 범위를 안내합니다.", type: "제품 납품", Icon: Truck },
   { title: "방문·위치 안내", description: "방문 전 담당자와 일정·길찾기 정보를 확인해 주세요.", Icon: MapPin, href: barunfoodLocation.path },
 ];
 
@@ -29,8 +29,8 @@ export function FooterInquiryHub({ onInquiry }: FooterInquiryHubProps) {
       <div className="mx-auto grid max-w-[1440px] gap-10 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-[0.93fr_1.07fr] lg:gap-20 lg:px-12 lg:py-24">
         <div className="flex flex-col justify-center lg:pl-[8.5%]">
           <p className="text-[10px] font-bold tracking-[0.21em] text-[#f4bd75]">CUSTOMER SUPPORT</p>
-          <h2 id="footer-inquiry-heading" className="mt-5 max-w-xl font-serif text-[clamp(2.6rem,4.5vw,5rem)] font-semibold leading-[1.03] tracking-[-0.08em]">제품과 조건을 알려주시면,<br /><span className="text-[#f3d5b7]">상담을 시작하겠습니다.</span></h2>
-          <p className="mt-6 max-w-lg text-sm leading-7 text-white/78 sm:text-[15px]">제품 개발, OEM·ODM, 납품 조건까지. 검토에 필요한 정보를 남겨주시면 담당자가 확인 후 다음 절차를 안내드립니다.</p>
+          <h2 id="footer-inquiry-heading" className="mt-5 max-w-xl font-serif text-[clamp(2.6rem,4.5vw,5rem)] font-semibold leading-[1.03] tracking-[-0.08em]">도우·피자 제품이 필요하시면,<br /><span className="text-[#f3d5b7]">상담을 시작하겠습니다.</span></h2>
+          <p className="mt-6 max-w-lg text-sm leading-7 text-white/78 sm:text-[15px]">제품 납품, OEM·ODM 개발, 샘플 테스트까지. 필요한 수량·일정·사용 환경을 남겨주시면 담당자가 다음 절차를 안내드립니다.</p>
           <div className="mt-9 flex flex-wrap items-center gap-5"><button onClick={() => onInquiry("제품 납품")} type="button" className="inline-flex items-center gap-2 bg-[#c23a2c] px-5 py-3.5 text-sm font-bold text-white transition hover:bg-white hover:text-[#9e3328] active:scale-[0.98]">상담 요청하기 <ArrowUpRight className="h-4 w-4" /></button><a href={barunfoodLocation.phoneHref} className="inline-flex items-center gap-2 text-sm font-bold text-white transition hover:text-[#f4bd75]"><Phone className="h-4 w-4" />전화 상담</a></div>
         </div>
         <aside className="border border-white/15 bg-[#201914]/85 p-5 shadow-[0_22px_64px_rgba(8,6,4,0.25)] backdrop-blur-sm sm:p-7">
